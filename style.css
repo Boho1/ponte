@@ -39,35 +39,47 @@
     font-size: 18px;
    }
    .menu li:hover {
-    background-color: #4c9e9e;
-    border-radius: 5px;
+    background-color: #0093d8;
+    /* border-radius: 5px; */
     transition: 0.3s ease;
-   }
+    height: 100%;
+    /* max-height: 100%; */
+}
+.navbar {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+.cms {
+  margin-top: 25px;
+}
+.menu li a {
+  text-decoration: none;
+}
+
    .menu li {
-    padding: 5px 14px;
+    padding: 1.65rem 1rem;
    }
    /* DROPDOWN MENU */
    .services {
     position: relative; 
    }
    .dropdown {
-    background-color: rgb(1, 139, 139);
-    padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
+    background-color: #0093d8;
+    width: 100%;
     display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
+}
+ul.dropdown {
+  padding-left: 0;
+  margin-left: -16px;
+}
+.menu a:hover {
+  color: white;
+}
    .dropdown li + li {
     margin-top: 10px;
    }
-   .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-   }
    .dropdown li:hover {
-    background-color: #4c9e9e;
+    background-color: #007bb5;
    }
    .services:hover .dropdown {
     display: block;
@@ -82,6 +94,7 @@
 }
 .fixed-top {
     height: 80px;
+    background-color: #353939ab;
 }
 dl, ol, ul {
     margin-top: 0;
@@ -89,17 +102,28 @@ dl, ol, ul {
 }
 
 /* Slideshow container */
-.slideshow-container {
-   
+.slideshow-container p{
+   font-size: 24px;
   }
   
   /* Slides */
   .mySlides {
     display: none;
-    padding: 80px;
-    text-align: center;
+    padding: 230px 230px 230px 0px;
     color: white;
   }
+
+  .container-fluid.slide {
+    padding-top: 13rem;
+  }
+
+  .mySlides h2 {
+    font-size: 48px;
+  }
+  .mySlides p {
+    font-size: 24px;
+  }
+  
   
   /* Next & previous buttons */
   .prev, .next {
@@ -128,13 +152,47 @@ dl, ol, ul {
     background-color: rgba(0,0,0,0.8);
     color: white;
   }
+  .planet h2 {
+    margin-top: 6rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+.planet p {
+  text-align: justify;
+}
   
+  .planet .planet-img {
+    float: right;
+    padding-left: 25px;
+  }
   /* The dot/bullet/indicator container */
   .dot-container {
-      text-align: center;
-      padding: 20px;
-      
+    padding: 40px 20px 170px 20px;
+    margin-left: -15px;
+    margin-top: -200px;
   }
+  img.blue-arrow {
+    padding-right: 10px;
+}
+.links a {
+  float: right;
+}
+.links a:hover {
+  text-decoration: none;
+}
+.partners {
+  text-align: center;
+}
+h2.partners-title {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font-weight: 300;
+}
+.row.partners {
+  border: 1px solid;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
   
   /* The dots/bullets/indicators */
   .dot {
@@ -142,14 +200,13 @@ dl, ol, ul {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
+    background-color: white;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #0093d8;
   }
   
   .author {color: cornflowerblue;}
