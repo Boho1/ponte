@@ -1,4 +1,3 @@
-/* UTILITIES */
 * {
     margin: 0;
     padding: 0;
@@ -14,25 +13,21 @@
     list-style: none;
    }
 
-   /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: teal;
+    background-color: #007bb5;
     color: #fff;
-    /*position: fixed;*/
     width: 100%;
    }
    .nav-links a {
     color: #fff;
    }
-   /* LOGO */
    .logo {
     font-size: 32px;
    }
-   /* NAVBAR MENU */
    .menu {
     display: flex;
     gap: 1em;
@@ -40,10 +35,8 @@
    }
    .menu li:hover {
     background-color: #0093d8;
-    /* border-radius: 5px; */
     transition: 0.3s ease;
     height: 100%;
-    /* max-height: 100%; */
 }
 .navbar {
   padding-top: 0!important;
@@ -59,7 +52,6 @@
    .menu li {
     padding: 1.65rem 1rem;
    }
-   /* DROPDOWN MENU */
    .services {
     position: relative; 
    }
@@ -101,12 +93,10 @@ dl, ol, ul {
     margin-bottom: 0rem !important;
 }
 
-/* Slideshow container */
 .slideshow-container p{
    font-size: 24px;
   }
   
-  /* Slides */
   .mySlides {
     display: none;
     padding: 230px 230px 230px 0px;
@@ -125,9 +115,7 @@ dl, ol, ul {
     width: 27rem;
   }
   
-  
-  /* Next & previous buttons */
-  .prev, .next {
+    .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -316,6 +304,8 @@ textarea:focus {
 
 .footer p {
   font-size: 14px;
+  padding-right: 7rem;
+  text-align: justify;
 }
 
 label {
@@ -346,7 +336,6 @@ input:focus + label {
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
     color: white;
@@ -364,9 +353,22 @@ input:focus + label {
     float: right;
     padding-left: 25px;
   }
-  /* The dot/bullet/indicator container */
+  img.icon {
+    width: 50px;
+    padding: 12px;
+    margin-top: 2.5rem;
+}
+.f{
+  background: #3b5998;
+}
+.l{
+  background: #0097da;
+}
+.t{
+  background: #00ccff;
+}
   .dot-container {
-    padding: 40px 20px 170px 20px;
+    padding: 0px 20px 170px 20px;
     margin-left: -15px;
     margin-top: -200px;
   }
@@ -388,12 +390,14 @@ h2.partners-title {
   font-weight: 300;
 }
 .row.partners {
-  border: 1px solid;
+  border: 1px solid #2d333d6b;
   padding: 20px;
   margin-bottom: 5rem;
 }
+.partner-logo {
+  padding: 2rem 0;
+}
   
-  /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -410,24 +414,20 @@ h2.partners-title {
   
   .author {color: cornflowerblue;}
 
-
-   /*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
 input[type=checkbox]{
     display: none;
    } 
-   /*HAMBURGER MENU*/
    .hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
    }
-   /* APPLYING MEDIA QUERIES */
+  
    @media (max-width: 768px) {
    .menu { 
     display:none;
     position: absolute;
-    background-color:teal;
+    background-color:#007bb5;
     right: 0;
     left: 0;
     text-align: center;
@@ -435,7 +435,7 @@ input[type=checkbox]{
    }
    .menu li:hover {
     display: inline-block;
-    background-color:#4c9e9e;
+    background-color:#007bb5;
     transition: 0.3s ease;
    }
    .menu li + li {
@@ -453,6 +453,30 @@ input[type=checkbox]{
     transform: translateX(35%);
    }
    .dropdown li:hover {
-    background-color: #4c9e9e;
+    background-color: #007bb5;
    }
    }
+   @media screen and (max-width: 767px) {
+    .mySlides {
+      padding: 230px 0px 230px 0px;
+    }
+    .display-br {
+      display: none;
+    }
+    .row.partners {
+      border: 1px solid #2d333d6b;
+      padding: 20px;
+      width: 15rem;
+      margin: 0 auto 5rem auto;
+  }
+  .footer p {
+    font-size: 14px;
+    padding-right: 0em;
+    text-align: justify;
+}
+  }
+  @media screen and (max-width: 450px) {
+  .mySlides p {
+    width: auto;
+}
+}
