@@ -122,6 +122,7 @@ dl, ol, ul {
   }
   .mySlides p {
     font-size: 24px;
+    width: 27rem;
   }
   
   
@@ -139,8 +140,206 @@ dl, ol, ul {
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 12rem;
+  }
+  .footer .company {
+    font-weight: 300;
+    font-size: 24px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.footer .contact {
+  font-weight: 300;
+  font-size: 24px;
+  padding-top: 2rem;
   
-  /* Position the "next button" to the right */
+}
+.footer {
+  color: white;
+  background-color: #252727;
+}
+
+form {
+  margin: 2em 0;
+  position: relative;
+}
+.footer input {
+  color: white;
+}
+.footer textarea {
+  color: white;
+}
+
+#charNum {
+  position: absolute;
+    bottom: -21px;
+    font-size: 12px;
+    left: 9.5rem;
+}
+#text {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  left: 20px;
+}
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  top: -2.25rem;
+  transition: all 0.2s ease-in-out;
+  
+}
+ 
+.floating-field {
+  float: right;
+  width: 100%;
+  position: relative;
+  border:1px black;
+}
+ 
+.floating-field label {
+  color: #C5E2E2;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.25s ease-in-out;
+  text-transform: capitalize;
+}
+
+.floating-field .label-area {
+  color: #C5E2E2;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.25s ease-in-out;
+  text-transform: capitalize;
+}
+.field.text-input input {
+  background-color: #252727;
+  margin-bottom: 1rem;
+}
+
+ 
+.floating-field.wide {
+  width: 100%;
+}
+
+input, textarea {
+  
+  border: 1px solid black;
+  width: 100%;
+  font-size: 1rem;
+}
+ 
+input:focus, textarea:focus {
+  outline: 0;
+}
+ 
+input:focus ~ span, textarea:focus ~ span {
+  width: 100%;
+  transition: all 0.125s ease-in-out;
+}
+
+textarea {
+  width: 100%;
+  min-height: 13em;
+  background-color: #252727;
+}
+.area label {
+  padding: 1rem;
+}
+.text-input input {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+label.label-input {
+  padding: 10px;
+  text-transform: inherit;
+}
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+
+label, input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+input {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid #007bb5;
+}
+textarea:focus {
+  outline: 0;
+  border: 1px solid #007bb5;
+}
+
+.submit-input {
+  float: right;
+  margin-top: inherit;
+}
+
+.submit-input input {
+  background-color: #007bb5;
+  border: 0;
+  border-radius: 5px;
+  width: 9.5rem;
+  height: 3rem;
+  margin-top: -1rem;
+}
+.submit-input input:hover {
+  background-color: #007bb5;
+}
+.plane img {
+  float: right;
+  margin-bottom: -2rem;
+  margin-right: 1.5rem;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem) scale(1.5);
+}
+
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+  
+
   .next {
     position: absolute;
     right: 0;
